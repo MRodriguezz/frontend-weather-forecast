@@ -1,8 +1,8 @@
+<!DOCTYPE html>
 <!--
 Usa este archivo para tu proyecto. No olvides hacer
 la estructura correta y guardar TODO tu CSS en el archivo styles.css
  -->
-<!DOCTYPE html>
 <!-- saved from url=(0039)http://getbootstrap.com/examples/blog/# -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
@@ -12,15 +12,14 @@ la estructura correta y guardar TODO tu CSS en el archivo styles.css
     <meta name="author" content="">
     <link rel="icon" href="http://getbootstrap.com/favicon.ico">
 
-    <title>Cognits Blog</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
+    <title>Weather JSON Api Web</title>
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
-
     <!-- Custom styles for this template -->
     <link href="css/styles.css" rel="stylesheet">
-
-
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -31,6 +30,43 @@ la estructura correta y guardar TODO tu CSS en el archivo styles.css
 
   <body>
 
+    <div class="banner">
+        <marquee>
+            <h1 class="letras"><img src="images/climaa.png"/>WELCOME TO THE WEATHER FORECAST</h1>
+        </marquee>
+    </div>
+    <hr>
+        
+        <p class="texto">Enter The City And The Country You Like.</p> 
+    
+     <div class="bloque">
+        <fieldset class="cuadro">
+            <form name="country">
+                <input class="mover" type="text" name="country" placeholder="Enter Country" maxlength="30"><br/>
+            </form>
+
+            <form name="city">
+                <input class="mover" type="text" name="city" placeholder="Enter City" maxlength="30"><br/>
+            </form>
+        
+            <div class="opciones">
+                <form><p class="temp">
+                <input type="radio" name="temp" value="Fahrenheit" checked="checked">Fahrenheit
+                <input type="radio" name="temp" value="Celsius">Celsius</p></form> 
+            </div>
+                <div class="boton">Weather</div>
+                    
+                    <div class="lista">
+                        <a class="paisesYcapitales" href="http://www.nationsonline.org/oneworld/countrynames_spanish.htm">List Country...</a>
+                    </div>
+        </fieldset>
+            </div>
+    </div>
+
+                <br/>
+            <div class="resultados"><p class="busquedafinalizada"></p></div></div>
+        </div>
+    </div>
 
 
     <!-- Bootstrap core JavaScript
@@ -38,6 +74,7 @@ la estructura correta y guardar TODO tu CSS en el archivo styles.css
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/script.js"></script>
     <script src="js/bootstrap.js"></script>
-
+    <script type="text/javascript" src="http://inacho07.googlepages.com/starfield.js"></script>
+    <script type="text/javascript" src="http://blogparts.giffy.me/0117/parts.js"></script><p style="text-align: center;margin:0;padding:0;">
   </body>
 </html>
